@@ -1,8 +1,8 @@
 /*variables to me used in a number of places*/
 body {
-  background-image: ulr("softwaretree.jpg");
+  background-color: #ffffcc;
   text-align: center;
-  color: #004c00;
+  color: #004c4c;
   margin: 10px;
   /*background-color: $ltyellow;*/
   font-family: arial,sans-serif; }
@@ -20,19 +20,40 @@ h4 {
   color: #009900; }
 
 #me {
-  color: #ffcc00;
-  padding: 20px; }
+  color: #ffcc00; }
 
 /*element selector*/
 nav {
-  padding-bottom: 30px;
+  padding-bottom: 20px;
   text-align: center; }
 
-/*nesting example removed*/
-/*child selector*/
+/*child selector & example of nesting*/
 .row > div {
-  padding: 20px;
-  border: 1px solid #00cccc; }
+  padding: 10px;
+  background-color: #ffffcc; }
+
+#homepad > div {
+  padding: 5px; }
+
+#portfoliopad > div {
+  border: 20px solid #00cccc; }
+
+#cv {
+  background-image: url("software_tree.jpg"); }
+  #cv .tdend {
+    padding-bottom: 20px; }
+  #cv #courses tr {
+    line-height: 30px; }
+  #cv .row > div {
+    padding: 30px;
+    padding-left: 60px; }
+  #cv .row > .col-12 {
+    padding-top: 60px; }
+  #cv .row > #cvDown {
+    padding-bottom: 60px; }
+
+#cv > .container {
+  padding: 10px; }
 
 .lefted {
   text-align: left; }
@@ -41,8 +62,10 @@ nav {
 ul li, td {
   font-size: 14px; }
 
-ul li {
-  padding-left: 0; }
+ul {
+  padding-left: 13px; }
+  ul li {
+    padding-bottom: 10px; }
 
 button {
   background-color: #009900;
@@ -50,7 +73,7 @@ button {
   font-size: 14px; }
 
 /*pseudoclass selector*/
-button:hover, .row > div {
+button:hover {
   background-color: #ffcc00; }
 
 @media (max width: 380px) {

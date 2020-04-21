@@ -7,12 +7,13 @@ $ltyellow: #ffffcc;
 $green: #009900;
 
 body {
-  background-image: ulr("softwaretree.jpg");
+  background-color: $ltyellow;
   text-align: center;
-  color: $drkgreen;
+  color: $teal;
   margin: 10px;
   /*background-color: $ltyellow;*/
   font-family: arial,sans-serif;  }
+
 
 h1 {
   color: $turquoise;  }
@@ -27,22 +28,47 @@ h4 {
     color: $green;  }
 
 #me {
-  color: $gold;
-  padding: 20px;  }
+  color: $gold;  }
 
 
   /*element selector*/
 nav {
-  padding-bottom: 30px;
+  padding-bottom: 20px;
   text-align: center; }
 
-  /*nesting example removed*/
+/*child selector & example of nesting*/
+  .row > div {
+  padding: 10px;
+  background-color: $ltyellow;  }
 
-/*child selector*/
-.row > div {
-  padding: 20px;
-    @extend button:hover;
-    border: 1px solid $turquoise; }
+
+#homepad > div {
+  padding: 5px;
+}
+
+
+#portfoliopad > div {
+  border: 20px solid $turquoise;  }
+
+
+#cv {
+  background-image: url("software_tree.jpg");
+  .tdend {
+    padding-bottom: 20px;  }
+  #courses tr {
+    line-height: 30px;  }
+  .row > div {
+    padding: 30px;
+    padding-left: 60px;  }
+  .row > .col-12 {
+    padding-top: 60px;  }
+  .row > #cvDown {
+    padding-bottom: 60px;  }
+}
+
+
+#cv > .container {
+  padding: 10px;  }
 
 
 .lefted {
@@ -54,8 +80,11 @@ ul li, td {
   font-size: 14px; }
 
 
-ul li {
-  padding-left: 0;  }
+ul {
+  padding-left: 13px;
+  li {
+    padding-bottom: 10px;  }
+}
 
 
 button {
