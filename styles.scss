@@ -1,0 +1,79 @@
+/*variables to me used in a number of places*/
+$gold: #ffcc00;
+$drkgreen: #004c00;
+$turquoise: #00cccc;
+$teal: #004c4c;
+$ltyellow: #ffffcc;
+$green: #009900;
+
+body {
+  text-align: center;
+  color: $drkgreen;
+  margin: 10px;
+  background-color: $ltyellow;
+  font-family: arial,sans-serif;  }
+
+h1 {
+  color: $turquoise;  }
+
+h2 {
+  color: $teal; }
+
+h4 {
+  color: $drkgreen; }
+
+.download {
+    color: $green;  }
+
+
+nav {
+  padding-bottom: 30px;
+  text-align: center; }
+
+
+  /*element selector*/
+  p {
+    line-height: 18px; }
+
+
+  /*nesting example*/
+  #homediv {
+    background-color: white;
+    padding: 20px;
+    p {
+      font-weight: bold;   }
+  }
+
+
+/*child selector*/
+.row > div {
+  padding: 20px;
+    @extend button:hover;
+    border: 1px solid $turquoise; }
+
+
+.lefted {
+  text-align: left; }
+
+
+/*Descendent and multiple selectors*/
+ul li, td {
+  font-size: 14px; }
+
+
+button {
+  background-color: $green;
+  font-weight: bold;
+  font-size: 14px; }
+
+
+/*pseudoclass selector*/
+button:hover {
+  background-color:  $gold;}
+
+
+@media (max width: 380px) {
+  .optional {
+    display: none; } }
+
+/*# sourceMappingURL=styles.css.map */
