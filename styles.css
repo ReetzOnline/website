@@ -1,9 +1,10 @@
 /*variables to me used in a number of places*/
 body {
+  background-image: ulr("softwaretree.jpg");
   text-align: center;
   color: #004c00;
   margin: 10px;
-  background-color: #ffffcc;
+  /*background-color: $ltyellow;*/
   font-family: arial,sans-serif; }
 
 h1 {
@@ -18,21 +19,16 @@ h4 {
 .download {
   color: #009900; }
 
+#me {
+  color: #ffcc00;
+  padding: 20px; }
+
+/*element selector*/
 nav {
   padding-bottom: 30px;
   text-align: center; }
 
-/*element selector*/
-p {
-  line-height: 18px; }
-
-/*nesting example*/
-#homediv {
-  background-color: white;
-  padding: 20px; }
-  #homediv p {
-    font-weight: bold; }
-
+/*nesting example removed*/
 /*child selector*/
 .row > div {
   padding: 20px;
@@ -44,6 +40,9 @@ p {
 /*Descendent and multiple selectors*/
 ul li, td {
   font-size: 14px; }
+
+ul li {
+  padding-left: 0; }
 
 button {
   background-color: #009900;
@@ -58,5 +57,6 @@ button:hover, .row > div {
   .optional {
     display: none; } }
 /*# sourceMappingURL=styles.css.map */
+/* from home page <img src="software_tree.jpg" width=75%> */
 
 /*# sourceMappingURL=styles.css.map */
